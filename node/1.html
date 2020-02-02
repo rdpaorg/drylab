@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/rdpa.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/1" />
+<link rel="canonical" href="/node/1" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Webservices (REST) for PSSH2 | DryLab</title>
+  <link type="text/css" rel="stylesheet" href="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/css/css_URg7zCY3-7etUL2PhZoyXDCBgod7k9qSceG3oRMm0Cg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/css/css_MnXiytJtb186Ydycnpwpw34cuUsHaKc80ey5LiQXhSY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/css/css_vwBbI8kGVDPhLaSTwAIPnImRCIJ59N73DMKRgy1bX7Y.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://drylab.rdpa.org/themes/bartik/css/ie.css?o8g0pq" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://drylab.rdpa.org/themes/bartik/css/ie6.css?o8g0pq" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/js/js_UWQINlriydSoeSiGQxToOUdv493zEa7dpsXC1OtYlZU.js"></script>
+<script type="text/javascript" src="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/js/js_puaYKIZExM0PgipaghSHNvp-k3ZMb4bKSo1ABt5zd9A.js"></script>
+<script type="text/javascript" src="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/js/js_2vOiMWT0yKRU5hc9iWlzMa6eD41cU5Bze8WRNve3_n4.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "" : "http://piwik-hillsweb.rhcloud.com/");_paq.push(["setSiteId", "19"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["setCookieDomain", ".drylab.rdpa.org"]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"2AVvFnnm4_svD-41hBrgwC9AezWPCmtDYmE_5whQIOw","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/filetree\/filetree.js":1,"sites\/all\/modules\/piwik\/piwik.js":1,"0":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/filetree\/filetree.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/drylab.rdpa.org\/modules\/drylab\/css\/drylab.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}},"piwik":{"trackMailto":1},"urlIsAjaxTrusted":{"\/node\/1?destination=node\/1":true}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-1 node-type-page" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu"><div class="section clearfix">
+
+          <a href="/" title="Home" rel="home" id="logo">
+        <img src="http://drylab.rdpa.org/sites/drylab.rdpa.org/files/rdpa-logo.png" alt="Home" />
+      </a>
+    
+          <div id="name-and-slogan">
+
+                              <div id="site-name">
+              <strong>
+                <a href="/" title="Home" rel="home"><span>DryLab</span></a>
+              </strong>
+            </div>
+                  
+        
+      </div> <!-- /#name-and-slogan -->
+    
+    
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-239 first"><a href="/">Home</a></li>
+<li class="menu-354 active-trail last active"><a href="/node/1" class="active-trail active">Webservices (REST) for PSSH2</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div></div>
+    
+          <div id="sidebar-first" class="column sidebar"><div class="section">
+          <div class="region region-sidebar-first">
+    <div id="block-menu-drylab" class="block block-menu">
+
+    <h2>Bioinformatics</h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first last collapsed"><a href="/drylab" title="DryLab Bioinformatics">drylab</a></li>
+</ul>  </div>
+</div>
+<div id="block-user-login" class="block block-user">
+
+    <h2>User login</h2>
+  
+  <div class="content">
+    <form action="/node/1?destination=node/1" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-7slYPaMAkbVXd4gZmTVRk03EtV3EQpF7SnrvMOzcO28" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+</div>
+  </div>
+      </div></div> <!-- /.section, /#sidebar-first -->
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+          Webservices (REST) for PSSH2        </h1>
+                          <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-1" class="node node-page node-full clearfix" about="/node/1" typeof="foaf:Document">
+
+      <span property="dc:title" content="Webservices (REST) for PSSH2" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Create service<br />
+Submit new job:<br />
+post a sequece to <a href="http://drylab.rdpa.org/rest/pssh2/job/">http://drylab.rdpa.org/rest/pssh2/job/</a> in one of these formats:<br /><code>application/x-www-form-urlencoded</code><br /><code>multipart/form-data </code><br /><code>application/json</code>  </p>
+<p>Job submission returns report in json format.<br />
+If successful, it includes Status: succes, internal jobid, and URI for job status retrival.<br />
+Example:<br /><code>{"Status":"success","Job ID":"hhsuite-pssh2-20150113062458","uri":"http://drylab.rdpa.org/rest/pssh2/job/hhsuite-pssh2-20150113062458"}</code></p>
+<p>Client example (php):<br /><code><br />
+&lt;?php<br />
+$sequence ='&gt;sp|P02769|ALBU_BOVIN Serum albumin OS=Bos taurus GN=ALB PE=1 SV=4<br />
+MKWVTFISLLLLFSSAYSRGVFRRDTHKSEIAHRFKDLGEEHFKGLVLIAFSQYLQQCPF<br />
+DEHVKLVNELTEFAKTCVADESHAGCEKSLHTLFGDELCKVASLRETYGDMADCCEKQEP<br />
+ERNECFLSHKDDSPDLPKLKPDPNTLCDEFKADEKKFWGKYLYEIARRHPYFYAPELLYY<br />
+ANKYNGVFQECCQAEDKGACLLPKIETMREKVLASSARQRLRCASIQKFGERALKAWSVA<br />
+RLSQKFPKAEFVEVTKLVTDLTKVHKECCHGDLLECADDRADLAKYICDNQDTISSKLKE<br />
+CCDKPLLEKSHCIAEVEKDAIPENLPPLTADFAEDKDVCKNYQEAKDAFLGSFLYEYSRR<br />
+HPEYAVSVLLRLAKEYEATLEECCAKDDPHACYSTVFDKLKHLVDEPQNLIKQNCDQFEK<br />
+LGEYGFQNALIVRYTRKVPQVSTPTLVEVSRSLGKVGTRCCTKPESERMPCTEDYLSLIL<br />
+NRLCVLHEKTPVSEKVTKCCTESLVNRRPCFSALTPDETYVPKAFDEKLFTFHADICTLP<br />
+DTEKQIKKQTALVELLKHKPKATEEQLKTVMENFVAFVDKCCAADDKEACFAVEGPKLVV<br />
+STQTALA'; </code></p>
+<p>$url = 'http://drylab.rdpa.org/rest/pssh2/job/';<br />
+$opts = array('http' =&gt; array(<br />
+				  'method'  =&gt; 'POST',<br />
+				  'request_fulluri' =&gt; FALSE,<br />
+				  'timeout'         =&gt; 300,<br />
+				  'header'  =&gt; 'Content-type: application/x-www-form-urlencoded' . "\r\n" .<br />
+				  'User-agent: restetst' . "\r\n",<br />
+				  'content' =&gt; 'sequence=' .urlencode($sequence),<br />
+				  )<br />
+		  );<br />
+    $context  = stream_context_create($opts);<br />
+    $res = file_get_contents($url, false, $context);<br />
+    echo '' .$res . "";</p>
+<p></p>
+<p>Retirve service service</p>
+<p>The URI from submission step serves as a job retrival endpoint.<br />
+It returns job status (running, finished, or missing), and uri for the job result download if the job is finished.<br />
+Example:<br />
+Job is running:<br /><code><br />
+{"Status":"Success","Job status":"running"}<br /></code><br />
+Live demo: <a href="http://drylab.rdpa.org/rest/pssh2/job/hhsuite-pssh2-20150112080630">http://drylab.rdpa.org/rest/pssh2/job/hhsuite-pssh2-20150112080630</a></p>
+<p>Job is missing:<br /><code>{"Status":"Fail","Job status":"missing"}</code><br />
+Live demo: <a href="http://drylab.rdpa.org/rest/pssh2/job/hhsuite-pssh2-20150112080631">http://drylab.rdpa.org/rest/pssh2/job/hhsuite-pssh2-20150112080631</a></p>
+<p>Job is finished:<br /><code>{"Status":"Success","Job status":"finished","uri":"http://drylab.rdpa.org/drylab/download/hhsuite-pssh2-20150113062458/query.pssh2"}</code><br />
+Live demo: <a href="http://drylab.rdpa.org/rest/pssh2/job/hhsuite-pssh2-20150113062458">http://drylab.rdpa.org/rest/pssh2/job/hhsuite-pssh2-20150113062458</a><br />
+Example job result download: <a href="http://drylab.rdpa.org/drylab/download/hhsuite-pssh2-20150113062458/query.pssh2">http://drylab.rdpa.org/drylab/download/hhsuite-pssh2-20150113062458/query.pssh2</a><br />
+Substitute '.pssh2' file extention to '.fasta' to download original submitted sequence: <a href="http://drylab.rdpa.org/drylab/download/hhsuite-pssh2-20150113062458/query.fasta">http://drylab.rdpa.org/drylab/download/hhsuite-pssh2-20150113062458/query.fasta</a></p>
+</div></div></div>  </div>
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  </body>
+</html>
